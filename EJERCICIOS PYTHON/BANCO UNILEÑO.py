@@ -1,0 +1,13 @@
+valor_retirar = int(input('Bienvenido al banco Unileño,\n por favor ingrese el valor que desea retirar.\n No olvide ingresar solo valores que sean multiplos de $10.000: '))
+billetes_100 = (valor_retirar // 100000)
+residuo = (valor_retirar % 100000)
+billetes_50 = (residuo // 50000)
+residuo = (residuo % 50000)
+billetes_20 = (residuo // 20000)
+residuo = (residuo % 20000)
+billetes_10 = (residuo // 10000)
+
+print(str(billetes_100) + " x $100000")
+print(str(billetes_50) + " x $50000")
+print(str(billetes_20) + " x $20000")
+print(str(billetes_10) + " x $10000")
